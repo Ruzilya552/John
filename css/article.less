@@ -1,0 +1,39 @@
+@import "fonts.less";
+@import "variables.less";
+.b-article {
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    &__date {
+        .heebo-black();
+        color: @cl-white;
+        font-size: 18px;
+        display: inline-flex;
+        background-color: @cl-pink;
+        border-radius: 16px;
+        height: 25px;
+        align-items: center;
+        padding: 0 10px;
+        margin: 0 18px 0 0;
+        @media (max-width: 768px) {
+            margin: 0 15px 0 0;
+        }
+    }
+    &__category {
+        .heebo-regular();
+        font-size: 20px;
+        line-height: 29px;
+        color: @cl-dark-blue;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+    &__image {
+        position: relative;
+        max-width: 681px;
+        max-height: 460px;
+        margin-bottom: 30px;
+    }
+}

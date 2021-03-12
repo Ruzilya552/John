@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Heebo-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Heebo-Black.woff2") format("woff2"), url("../fonts/Heebo-Black.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Heebo-Bold.woff2") format("woff2"), url("../fonts/Heebo-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Heebo-Medium.woff2") format("woff2"), url("../fonts/Heebo-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Heebo-Regular.woff2") format("woff2"), url("../fonts/Heebo-Regular.woff") format("woff");
+  font-display: swap;
+}
+.b-blog {
+  padding: 0 0 40px 0;
+}
+@media (max-width: 768px) {
+  .b-blog {
+    padding: 0 0 20px 0;
+  }
+}
+.b-blog__item {
+  padding: 0 0 30px 0;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media (max-width: 768px) {
+  .b-blog__item {
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+  }
+}
+.b-blog__link {
+  color: #21243D;
+  text-decoration: none;
+}
+.b-blog__info {
+  font-family: "Heebo-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 15px;
+  display: flex;
+}
+.b-blog__info span {
+  margin: 0 20px;
+  color: #21243D;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .b-blog__info {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+.b-blog__category {
+  color: #8695A4;
+}

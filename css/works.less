@@ -1,0 +1,99 @@
+@import "fonts.less";
+@import "variables.less";
+
+.b-works {
+    &--featured-works {
+        @media (max-width: 768px) {
+            display: flex;
+            overflow: auto;
+            .b-works__item {
+                @media (max-width: 768px) {
+                    flex: 0 0 90%;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    &__link {
+        .heebo-bold();
+        color: @cl-dark-blue;
+        text-decoration: none;
+        &:hover {
+            color: @cl-pink;
+        }
+    }
+    &__item {
+        padding: 0 0 20px 0;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid #e0e0e0;
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            padding: 0 0 30px 0;
+            margin: 0 0 30px 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__image{
+        flex: 0 0 246px;
+        display: block;
+        min-height: 180px;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        transition: all ease 0.5s;
+        @media (max-width: 768px) {
+            // padding: 0 0 60% 0;
+            margin-bottom: 17px;
+        }
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    &__body{
+        flex: 1 1 auto;
+        @media (min-width: 768px) {
+            padding: 0 0 0 18px;
+        }
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+    &__date {
+        .heebo-black();
+        color: @cl-white;
+        font-size: 18px;
+        display: inline-flex;
+        background-color: #142850;
+        border-radius: 16px;
+        height: 25px;
+        align-items: center;
+        padding: 0 10px;
+        margin: 0 26px 0 0;
+        @media (max-width: 768px) {
+            font-size: 16px;
+            margin: 0 22px 0 0;
+        }
+    }
+    &__category{
+        .heebo-regular();
+        font-size: 20px;
+        line-height: 29px;
+        color: #8695A4;
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+}
+
+.b-our-works {
+    margin-bottom: 50px;
+    @media(max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}

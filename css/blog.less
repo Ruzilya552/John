@@ -1,0 +1,44 @@
+@import "fonts.less";
+@import "variables.less";
+
+.b-blog {
+    padding: 0 0 40px 0;
+    @media (max-width: 768px) {
+        padding: 0 0 20px 0;
+    }
+    &__item {
+        padding: 0 0 30px 0;
+        margin: 0 0 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+        @media (max-width: 768px) {
+            padding: 0 0 20px 0;
+            margin: 0 0 20px 0;
+        }
+    }
+    &__link {
+        color: @cl-dark-blue;
+        text-decoration: none;
+    }
+    &__info {
+        .heebo-regular();
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        display: flex;
+        span {
+            margin: 0 20px;
+            color: @cl-dark-blue;
+            font-size: 20px;
+        }
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+    // &__date {
+        
+    // }
+    &__category {
+        color: #8695A4;
+    }
+}

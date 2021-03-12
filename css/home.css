@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Heebo-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Heebo-Black.woff2") format("woff2"), url("../fonts/Heebo-Black.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Heebo-Bold.woff2") format("woff2"), url("../fonts/Heebo-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Heebo-Medium.woff2") format("woff2"), url("../fonts/Heebo-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Heebo-Regular.woff2") format("woff2"), url("../fonts/Heebo-Regular.woff") format("woff");
+  font-display: swap;
+}
+.b-introduce {
+  padding-top: 38px;
+  padding-bottom: 71px;
+}
+@media (max-width: 868px) {
+  .b-introduce {
+    padding-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .b-introduce {
+    padding-bottom: 58px;
+  }
+}
+.b-introduce__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: flex-start;
+  padding: 18px 110px 0 0;
+}
+.b-introduce__content *:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 868px) {
+  .b-introduce__content {
+    padding: 18px 50px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .b-introduce__content {
+    padding: 0px 15px 0 15px;
+    align-items: center;
+  }
+}
+.b-introduce__avatar {
+  max-width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: -5px 13px 0 0 #EDF7FA;
+  position: realtive;
+}
+@media (max-width: 768px) {
+  .b-introduce__avatar {
+    max-width: 170px;
+    height: 170px;
+    margin-bottom: 40px;
+  }
+}
+.b-recent-posts {
+  background: #EDF7FA;
+  padding: 25px 10px 30px 10px;
+}
+.b-recent-posts__header {
+  display: flex;
+}
+.b-recent-posts__view-all {
+  font-family: "Heebo-Regular";
+  font-weight: 400;
+  text-decoration: none;
+  color: #00A8CC;
+  font-size: 16px;
+  line-height: 23px;
+  flex: 0 0 auto;
+  padding-top: 7px;
+  transition: all ease 0.5s;
+}
+@media (max-width: 768px) {
+  .b-recent-posts__view-all {
+    display: none;
+  }
+}
+.b-recent-posts__view-all:hover {
+  color: #0093b3;
+  text-decoration: underline;
+}
+.b-recent-posts__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+@media (max-width: 768px) {
+  .b-recent-posts__items {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+}
+.b-recent-posts__column {
+  flex: 0 1 50%;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .b-recent-posts__column {
+    margin-bottom: 17px;
+  }
+}
+.b-news {
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .b-news {
+    padding: 10px 20px;
+  }
+}
+.b-news--recent-posts {
+  padding: 25px;
+}
+.b-news__link {
+  text-decoration: none;
+  color: #21243D;
+}
+.b-news__info {
+  font-family: "Heebo-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.b-news__info span {
+  margin: 0 10px;
+}
+@media (max-width: 768px) {
+  .b-news__info {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+.b-post-title {
+  font-family: "Heebo-Regular";
+  font-weight: 400;
+  font-size: 22px;
+  flex: 1 1 auto;
+}
+.b-post-title--recent-posts {
+  padding: 0 20px 0 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .b-post-title--recent-posts {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+.b-post-title--works {
+  margin-bottom: 20px;
+}
+.b-featured-works {
+  padding: 30px 10px 80px 10px;
+}
